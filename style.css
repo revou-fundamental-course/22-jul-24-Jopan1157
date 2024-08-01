@@ -1,0 +1,378 @@
+*,
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: white;
+}
+nav{
+    background-color:#ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: relative;
+    margin-top: -860px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+nav .logo img{
+    width: 50px;
+    height: auto;
+}
+.nav-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-links li{
+    margin: 0 15px;
+}
+.nav-links a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+nav div img {
+    width: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    color: #191919;
+    font-weight: 600;
+    transition: all;
+    padding: 5px 0;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+nav ul li a:hover{
+    border-bottom: 1px solid black;
+    color: rgb(34, 110, 241);
+}
+#slider{
+    overflow: hidden;
+    filter: blur(5px);
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img{
+    float: left;
+    width: 20%;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+}
+.main-title{
+    position: relative;
+    margin-top: 250px;
+    margin-left: 500px
+}
+.main-content-item{
+    
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 300px;
+}
+.main-content {
+    display: flex;
+    margin-top: 210px;
+    
+}
+  h2 {
+    margin-bottom: 80px;
+  }
+  input {
+    width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+    width: 75%;
+    border: none;
+}
+input[type=text], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 75%;
+    background-color: rgb(120, 167, 250);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(120, 167, 250);
+  }
+  .item-icon {
+    background-image: url(https://d324bm9stwnv8c.cloudfront.net/article/20180919192821.5271999536679_thumbnail.png);
+
+    
+  }
+  .main-content-article{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-content-banner{
+    
+    width: 100%;
+    height: 400px;
+    background-image: url(https://asset-2.tstatic.net/tribunnews/foto/bank/images/gaya-traveling-orang-indonesia-kamu-masuk-yang-mana-nih.jpg);
+    margin-top: 300px;
+    margin-left: 70px;
+    border-radius: 10px;
+}
+.img-circle{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.panah-img{
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-left: 20px;
+}
+.img-tanda{
+    width: 20px;
+    margin-top: 10px;
+}
+.paragraf-panah{
+    margin-top: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.paragraf{
+    margin-left: 50px;
+    margin-top: -90px;
+}
+.package-bawah {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: rgb(197, 194, 194);
+    margin-bottom: 10px;
+    padding: 20px
+    
+}
+.menu-icon{
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+.button{
+    background-color: rgb(120, 167, 250);
+    padding: 15px;
+    border-radius: 15px;
+    list-style: none;
+    display: inline;
+    margin-left: 220px;
+    border: 1px solid rgb(40, 40, 245);
+}
+.text-button{
+    color: #ffffff;
+}
+article li a {
+    text-decoration: none;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.flex-container div {
+    margin: 10px;
+    padding: 20px;
+}
+.flex-container div h5{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+    
+}
+.flex-container div p{
+    margin-left: 20px;
+
+}
+.flex-container div img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -15px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.flex-container2 {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-container2 div{
+    margin: 10px;
+    padding: 20px;
+}
+.flex-container2 div h5{
+    font-size: 20px;
+    margin-top: ;
+
+
+}
+.flex-container2 div p{
+  margin-left: -20px;  
+}
+.flex-container2 div img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: -30px;  
+    margin-left: -20px;
+   
+} 
+.text-penutup{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid black;
+}
+.h1-penutup{
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.p-penutup{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button-bawah{
+    background-color: rgb(120, 167, 250);
+    border-radius: 10px;
+    list-style: none;
+    display: inline;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgb(40, 40, 245);
+}
+.button-bawah:hover{
+    background-color: rgb(70, 137, 252);
+}
+
+.text-button-bawah{
+    list-style: none;
+    color: white;
+}
+
+
+div li a {
+    text-decoration: none;
+}
+.logo-bawah{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+}
+.tos-pp{
+    list-style: none;
+    margin-right: 10px;
+    color: white;
+}
+.tos-pp:hover{
+    color: #191919;    
+}   
+
+.p-bawah{
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
